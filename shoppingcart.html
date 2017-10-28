@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html>
+   
     <head>
-        <title>Bun Bun's Bake Shop</title>
+        <title>Shopping Cart</title>
         <meta charset="utf-8">
         <meta name="keywords" content="shop, backery, pittsburgh">
         <meta name="description" content="shop and explore the traditional cinnamon rolls in pittsburgh">
-        <!-- A code to link css -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- A code to link javascript and jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/shoppingCart.js"></script>
     </head>
     <body>
         <main>
             <header>
-                <!-- link homepage to a logo -->
                 <a href="index.html">
                     <img src="images/logo.png" id="logo">
                 </a>
                 <div class="clear"></div>
             </header>
+            
             <article>
-                <nav><!-- navigation -->
+                <nav>
                     <ul>
-                        <li><a href="index.html"><em>Bun Bun's</em></a></li>
+                        <li><a href="index.html">Bun Bun's</a></li>
                         <li><a href="products.html">products</a></li>
                         <li><a href="locations.html">location</a></li>
                         <li><a id="shoppingCartNav" href="shoppingcart.html"></a></li>
                     </ul>
                 </nav>
-                <!-- brief description of the shop -->
-                <div>
-                    <h1>Hand-made and Traditional</h1>
-                    <p>Try Pittsburgh's best cinnamon rolls!!</p>
-                    <aside>
-                        <img src="images/headerimg.jpg">
-                        <img src="images/making.jpg">
-                    </aside>
-                </div>
-                <!-- brief images of the products -->
-                <section> 
-                    <h3>Our Products</h3>
-                        <img src="images/original.jpg">
-                        <img src="images/original(free).jpg">
-                        <img src="images/original(vegan).jpg">
-                        <img src="images/mapleapplepecan.jpg">
-                        <img src="images/bacon.jpg">
-                        <img src="images/pumpkinspice.jpg">
-                        <img src="images/strawberryrhubarb.png">
-                        <img src="images/birthdaycake.jpg">
-                        <img src="images/cranberry.png">
+                <div></div> <!-- A divider line below the navigation -->    
+                <section class="main-content">
+                    <h3>Shopping Cart</h3>
+                    <p id="quantity">Quantity</p>
+                    <p class="placeholder"> This Shopping Cart is empty. Please add item to you shopping cart. </p>
+                    <div id = "list">
+
+                    </div>
                 </section>
+                
+                <aside class="sub-content">
+                    <div class="cart">
+                        <div class="cartPrice">
+                            <p>Subtotal(#items): $##.##</p>
+                        </div>
+                        <div class="proceed-to-checkout">
+                            <p>Proceed to Checkout</p>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
             </article>
-            <!-- footer -->
+            
             <footer class="clear">
                 <h2>Contact</h2>
                 <p>30 Bath Rd, Brunswick, ME 04011</p>
@@ -63,7 +62,11 @@
                     <p class="copy">©2016 Bun Bun's Cake Shop. All rights reserved.</p>
                 </div>
             </footer>
+            
             <div class="clear"></div>
+            
         </main>
+        
     </body>
+    
 </html>
